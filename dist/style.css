@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
+/* level 1 */
+body {
+  font-size: 18px;
+  font-family: "Outfit", sans-serif;
+  display: grid;
+  place-items: center;
+  background-color: hsl(217, 54%, 11%);
+  min-height: 100vh;
+  overflow: hidden;
+}
+/* level 2 */
+.cardNft {
+  width: 25rem;
+  background-color: hsl(216, 50%, 16%);
+  box-shadow: -1rem 2rem 1rem hsl(218, 50%, 9%);
+}
+/* level 3 */
+/* Image Div */
+#imageDiv {
+  display: grid;
+  margin-bottom: 5px;
+  z-index: 2;
+}
+
+#filterHover {
+  display: inherit;
+  opacity: 0;
+  background-color: hsl(178, 100%, 50%);
+
+  z-index: 3;
+}
+#filterHover:hover {
+  opacity: 0.55;
+}
+#image-view {
+  display: grid;
+  place-self: center;
+}
+#filterHover,
+#image-equilibrium {
+  grid-column: 1;
+  grid-row: 1;
+}
+#image-equilibrium {
+  height: auto;
+  z-index: 1;
+}
+
+/* Section info */
+#TitleLink {
+  font-size: larger;
+}
+
+/* Bid Div */
+.bidDiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 0.5px solid hsl(215, 32%, 27%);
+  padding-bottom: 2rem !important;
+}
+.bidChild {
+  display: flex;
+  align-items: center;
+}
+.imageBid {
+  padding-right: 0.2rem;
+}
+
+#price {
+  color: hsl(178, 100%, 50%);
+}
+
+/* Artuer Div */
+.arthur {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#avatar {
+  width: 2rem;
+  border-radius: 50%;
+  height: auto;
+  border: 1px solid white;
+}
+
+/* utitles */
+.gray {
+  color: hsl(215, 51%, 70%);
+}
+.paddingAround {
+  padding: 0.5rem;
+}
+.radiusBorder {
+  border-radius: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+a:hover {
+  color: hsl(178, 100%, 50%);
+}
+.maxSize {
+  width: 100%;
+  height: 100%;
+}

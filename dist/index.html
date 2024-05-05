@@ -1,26 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | NFT preview card component</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | NFT preview card component</title>
+  </head>
+  <body>
+    <div class="cardNft paddingAround radiusBorder">
+      <div id="imageDiv" class="radiusBorder maxSize">
+        <img
+          src="./images/image-equilibrium.jpg"
+          alt="Image Equilibrium"
+          id="image-equilibrium"
+          class="radiusBorder maxSize"
+        />
+        <div id="filterHover" class="radiusBorder">
+          <img src="./images/icon-view.svg" alt="" id="image-view" />
+        </div>
+      </div>
+      <div id="sectioninfo">
+        <a class="paddingAround" id="TitleLink" src="#">Equilibrium #3429</a>
+        <p class="gray paddingAround"
+          >Our Equilibrium collection promotes balance and calm.</p
+        >
+      </div>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  
-</head>
-<body>
+      <div class="bidDiv">
+        <div id="price" class="bidChild paddingAround"
+          ><img src="./images/icon-ethereum.svg" alt="" class="imageBid" />
+          0.041 ETH
+        </div>
+        <div id="DaysReminder" class="bidChild gray paddingAround"
+          ><img src="./images/icon-clock.svg" alt="" class="imageBid" /> 3 days
+          left</div
+        >
+      </div>
 
-  Equilibrium #3429
-
-  Our Equilibrium collection promotes balance and calm.
-
-  0.041 ETH
-  3 days left
-  
-  Creation of Jules Wyvern
-
-</body>
+      <div class="arthur paddingAround">
+        <img src="./images/image-avatar.png" alt="" id="avatar" />
+        <div id="nameArthur" class="gray"
+          >Creation of <a href="#">Jules Wyvern</a></div
+        >
+      </div>
+    </div>
+  </body>
 </html>
